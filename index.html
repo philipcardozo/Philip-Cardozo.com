@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philip O. Cardozo</title>
+  <meta name="description" content="Philip O. Cardozo — Applied Mathematics & Computer Science at Emory University. Quantitative Researcher, ML Engineer, Co-founder.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">Philip O. Cardozo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#experience">Experience</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#projects">Projects</a>
+        <a href="Resume.pdf" target="_blank" class="nav-resume">Resume ↗</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-photo">
+        <img src="Profile Picture.jpeg" alt="Philip Cardozo">
+      </div>
+      <div class="hero-text">
+        <p class="hero-eyebrow">philipcardozo.com</p>
+        <h1>Philip O.<br>Cardozo</h1>
+        <p class="hero-subtitle">Applied Mathematics &amp; Statistics · Computer Science</p>
+        <p class="hero-institution">Emory University &mdash; Class of 2028 &nbsp;·&nbsp; GPA 3.6</p>
+        <div class="hero-tags">
+          <span>Quantitative Research</span>
+          <span>Machine Learning</span>
+          <span>Algorithmic Trading</span>
+          <span>Co-founder</span>
+        </div>
+        <div class="hero-links">
+          <a href="mailto:focardo@emory.edu">focardo@emory.edu</a>
+          <span class="sep">|</span>
+          <a href="https://www.linkedin.com/in/felipecardozo-" target="_blank">LinkedIn</a>
+          <span class="sep">|</span>
+          <a href="https://github.com/FelipeCardozo0" target="_blank">GitHub</a>
+          <span class="sep">|</span>
+          <a href="tel:+14043889012">(404) 388-9012</a>
+        </div>
+        <div class="hero-actions">
+          <a href="Resume.pdf" target="_blank" class="btn-primary">View Resume</a>
+          <a href="#roadmap" class="btn-secondary">See Journey</a>
+        </div>
+      </div>
+    </div>
+    <a href="#stats" class="scroll-cue" aria-label="Scroll down">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </a>
+  </section>
+
+  <!-- Stats Bar -->
+  <section id="stats">
+    <div class="stats-container">
+      <div class="stat">
+        <span class="stat-number">1.38</span>
+        <span class="stat-label">Sharpe Ratio</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">$68K+</span>
+        <span class="stat-label">Revenue Generated</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">20M+</span>
+        <span class="stat-label">Monte Carlo Sims</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">843<small>/10K</small></span>
+        <span class="stat-label">NumerAI Rank</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">217<small>/3K</small></span>
+        <span class="stat-label">Akuna HackerRank</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">3.6</span>
+        <span class="stat-label">GPA / 4.0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Work Experience &amp; Research</h2>
+      <div class="exp-list">
+
+        <div class="exp-card">
+          <div class="exp-meta-row">
+            <div>
+              <span class="exp-badge upcoming">Upcoming</span>
+              <h3>Atmosphere Capital</h3>
+              <p class="exp-role">Incoming Summer Derivatives Analyst</p>
+            </div>
+            <div class="exp-right">
+              <span class="exp-loc">New York, NY</span>
+              <span class="exp-date">Jun. – Aug. 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-meta-row">
+            <div>
+              <span class="exp-badge current">Current</span>
+              <h3>Stochastic Processes Research &mdash; Ph.D. Mitchell Scott</h3>
+              <p class="exp-role">Researcher &amp; Mentee &nbsp;|&nbsp; Academic Paper</p>
+            </div>
+            <div class="exp-right">
+              <span class="exp-loc">Atlanta, GA</span>
+              <span class="exp-date">Jan. 2026 – Present</span>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Co-authored academic paper on volatility arbitrage: rough fractional Volterra processes (H&nbsp;≈&nbsp;0.07) with MCMC regime detection pricing short-dated equity index straddles with self-exciting Hawkes jump-diffusion; achieved Sharpe ratio of 1.38</li>
+            <li>Reached 0.87 naive volatility benchmark with 4,096-path simulations in O(N<sup>−½</sup>) convergence; improved Calmar ratio from 0.23 → 0.57</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-meta-row">
+            <div>
+              <span class="exp-badge current">Current</span>
+              <h3><a href="https://veratori.com" target="_blank">Veratori.com</a> &mdash; Start-Up</h3>
+              <p class="exp-role">Co-founder &amp; Chief Technology Officer</p>
+            </div>
+            <div class="exp-right">
+              <span class="exp-loc">Atlanta, GA</span>
+              <span class="exp-date">Jan. 2025 – Present</span>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Raised $22K initial investment for research and cybersecurity hardware to reduce fast-casual restaurant waste and costs</li>
+            <li>Lead 4-person ML team building reinforcement learning for restocking and client demand forecasting with VLM tech &amp; LiDAR</li>
+            <li>Closed 20 franchise deals with 4 clients, installing AI computer vision for inference strategy — earning $46K in yearly income</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-meta-row">
+            <div>
+              <h3>Linker Vision</h3>
+              <p class="exp-role">AI Software Engineer Intern</p>
+            </div>
+            <div class="exp-right">
+              <span class="exp-loc">Remote</span>
+              <span class="exp-date">Jun. – Aug. 2025</span>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Optimized enterprise real-time object detection for NVIDIA Jetson edge devices, reducing latency using TensorRT</li>
+            <li>Refactored inference engine with Engineering &amp; Research team, decreasing GPU heat for consistent results</li>
+            <li>Integrated 5,000+ images from AI SaaS cloud simulations for smart city project, increasing model accuracy and context</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-meta-row">
+            <div>
+              <h3>Algory Capital</h3>
+              <p class="exp-role">Quantitative Analyst</p>
+            </div>
+            <div class="exp-right">
+              <span class="exp-loc">Atlanta, GA</span>
+              <span class="exp-date">Aug. 2024 – Dec. 2025</span>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Analyzed risk for $100K portfolio, building long/short LSTM equity and derivative strategies using GARCH &amp; volatility models</li>
+            <li>Reported mean-variance optimization, efficient frontier analysis, and stress-tested fundamental strategies</li>
+            <li>Collaborated with 5 devs on code reviews and strategy pitches while receiving 1-on-1 senior analyst mentorship</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-meta-row">
+            <div>
+              <span class="exp-badge current">Current</span>
+              <h3>Blockchain at Emory</h3>
+              <p class="exp-role">Chief Technology Officer &middot; Head of Mining &middot; Website Developer</p>
+            </div>
+            <div class="exp-right">
+              <span class="exp-loc">Atlanta, GA</span>
+              <span class="exp-date">Feb. 2025 – Present</span>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Led 5-dev team to build 24/7 ASIC mining rigs monitoring and MultiSig app deployed on AWS — 900 TH/s on $2K budget with Solana Foundation subsidies, generating $1,500/year for hackathon team flights</li>
+            <li>Represented the club at ETHDenver, Penn Blockchain, and HackATL; built projects in DeFi and smart contract infrastructure</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap -->
+  <section id="roadmap">
+    <div class="container">
+      <h2 class="section-title">Academic &amp; Project Roadmap</h2>
+      <p class="section-sub">January 2024 → Present</p>
+
+      <div class="timeline">
+        <div class="tl-center-line"></div>
+
+        <!-- 2024 -->
+        <div class="year-label">
+          <div class="year-bubble">2024</div>
+        </div>
+
+        <div class="tl-row left">
+          <div class="tl-card">
+            <div class="tl-period">H1 · Jan – Jun 2024</div>
+            <div class="tl-school">Federal University of Rio de Janeiro</div>
+            <div class="tl-block">
+              <h4>Projects</h4>
+              <ul>
+                <li>HTTP Server — built from scratch in C</li>
+                <li>Finance Chatbot — stock analysis &amp; market Q&amp;A bot</li>
+              </ul>
+            </div>
+            <div class="tl-block">
+              <h4>Coursework</h4>
+              <div class="tag-row">
+                <span>Computer Programming</span>
+                <span>Systems Fundamentals</span>
+                <span>Software Processes</span>
+                <span>Discrete Mathematics</span>
+                <span>Calculus I</span>
+              </div>
+            </div>
+          </div>
+          <div class="tl-dot"></div>
+        </div>
+
+        <div class="tl-row right">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-period">H2 · Jul – Dec 2024</div>
+            <div class="tl-school">Emory University — Freshman Fall 2024</div>
+            <div class="tl-block">
+              <h4>Projects</h4>
+              <ul>
+                <li>Systematic Portfolio Optimization (MPT) — Max Sharpe, Min Vol, Risk Parity, CVaR; 1.34 Sharpe ratio</li>
+                <li>S&amp;P 500 Analytics Dashboard</li>
+                <li>Numerai Tournament Q3 2024 — 843/10K ranking; 6 LightGBM regressors, 156-era walk-forward CV</li>
+              </ul>
+            </div>
+            <div class="tl-block">
+              <h4>Coursework</h4>
+              <div class="tag-row">
+                <span>CS 170: Intro to CS I</span>
+                <span>MATH 101: Calculus I</span>
+                <span>FIN 201: Business Economics</span>
+                <span>ENGRD 101: Rhetorical Comp</span>
+                <span>ACT 200: Accounting</span>
+                <span>PE 125 · HLTH 100 · ECS</span>
+              </div>
+            </div>
+            <div class="tl-block">
+              <h4>Activity</h4>
+              <ul><li>Joined Algory Capital — Quantitative Analyst</li></ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2025 -->
+        <div class="year-label">
+          <div class="year-bubble">2025</div>
+        </div>
+
+        <div class="tl-row left">
+          <div class="tl-card">
+            <div class="tl-period">H1 · Jan – Jun 2025</div>
+            <div class="tl-school">Emory University — Freshman Spring + Summer 2025</div>
+            <div class="tl-block">
+              <h4>Projects &amp; Milestones</h4>
+              <ul>
+                <li>Co-founded <a href="https://veratori.com" target="_blank">Veratori.com</a> — raised $22K, closed 20 franchise deals, $46K/year revenue</li>
+                <li>Point72 Academy Case Competition — MNDY short thesis, $71.33 target; stock fell $185 → ~$73, advancing to Point72 HQ finals</li>
+                <li>Fourier-Based Option Pricing Engine — 6 stochastic models via Carr-Madan FFT; sub-$0.01 pricing error, &lt;5 bps RMSE on Heston calibration</li>
+              </ul>
+            </div>
+            <div class="tl-block">
+              <h4>Coursework</h4>
+              <div class="tag-row">
+                <span>CS 224: Foundations of CS</span>
+                <span>CS 171: Intro to CS II</span>
+                <span>BUS 290: Tech Toolbox A: Excel</span>
+                <span>MATH 221: Linear Algebra</span>
+                <span>MESAS 190: Freshmen Seminar</span>
+                <span>BUS 350: Data &amp; Decision Analytics</span>
+                <span>MATH 112: Calculus II</span>
+                <span>MATH 211: Adv. Calculus (Multivariable)</span>
+              </div>
+            </div>
+            <div class="tl-block">
+              <h4>Activities</h4>
+              <ul>
+                <li>Joined Blockchain at Emory — CTO, Head of Mining, Website Developer</li>
+                <li>Led ASIC mining rigs to 900 TH/s on $2K budget</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-dot"></div>
+        </div>
+
+        <div class="tl-row right">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-period">H2 · Jul – Dec 2025</div>
+            <div class="tl-school">Emory University — Sophomore Fall 2025</div>
+            <div class="tl-block">
+              <h4>Projects</h4>
+              <ul>
+                <li><a href="https://github.com/philipcardozo/Network-Enhanced-Underwriting-eXposure-Intelligence-System-NEXUS-" target="_blank">NEXUS</a> — FDIC &amp; ABS Intelligence System; Neo4j risk engine, graph centrality credit scoring</li>
+                <li>HFT Hawkes Process System — 9ms execution, 0–300% leverage, VaR kill-switches, Dockerized Azure</li>
+                <li>Deep Learning for Urban Air Quality — 74% empirical coverage, 420K records, Snowflake ML</li>
+                <li>2026 World Cup Neural Predictor — 100K Monte Carlo sims, &gt;65% accuracy, 45+ calibrated models</li>
+                <li>Crypto Style Factors — 160.38% annualized returns, Sharpe 0.93; Exploring Style Factors research paper</li>
+              </ul>
+            </div>
+            <div class="tl-block">
+              <h4>Coursework</h4>
+              <div class="tag-row">
+                <span>CS 253: Data Structures &amp; Algorithms</span>
+                <span>MATH 300: Math for Data Science</span>
+                <span>MATH 361: Mathematical Statistics I</span>
+                <span>MATH 212: Differential Equations</span>
+                <span>MATH 385: Topics in Mathematics</span>
+                <span>ECON 112: Macroeconomics</span>
+                <span>PORT 185: Luso-Afro-Braz Studies</span>
+                <span>BIOL 120: Concepts in Biology</span>
+              </div>
+            </div>
+            <div class="tl-block">
+              <h4>Internship &amp; Activities</h4>
+              <ul>
+                <li>Linker Vision — AI Software Engineer Intern (Jun.–Aug. 2025)</li>
+                <li>Joined Pocket Aces Trading; C++ pairs trading on Azure via IBKR API</li>
+                <li>HackATL 2025 — 9th Place &nbsp;·&nbsp; ETHDenver 2025 — 6th Place</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2026 -->
+        <div class="year-label">
+          <div class="year-bubble">2026</div>
+        </div>
+
+        <div class="tl-row left">
+          <div class="tl-card active">
+            <div class="tl-period">Q1 · Jan – Present <span class="now-badge">Now</span></div>
+            <div class="tl-school">Emory University — Sophomore Spring 2026</div>
+            <div class="tl-block">
+              <h4>Projects &amp; Research</h4>
+              <ul>
+                <li><a href="https://github.com/philipcardozo/RAMPA-Regime-Aware-Multi-Agent-Portfolio-Allocator" target="_blank">RAMPA</a> — HMM + LightGBM alpha across 3,500+ trading days; PPO agents in 5-phase ML portfolio allocator; rough Bergomi DNN at ms latency</li>
+                <li>Volterra Research Paper — co-authored with Ph.D. Mitchell Scott; rough fractional Volterra + MCMC + Hawkes jump-diffusion; Sharpe 1.38, Calmar 0.57</li>
+                <li>Deep Learning for Schwarz-Christoffel Maps — 0.0038 MSE, ELU activation; research paper</li>
+              </ul>
+            </div>
+            <div class="tl-block">
+              <h4>Coursework</h4>
+              <div class="tag-row">
+                <span>CS 470: Data Mining</span>
+                <span>CS 326: Analysis of Algorithms</span>
+                <span>CS 534: Machine Learning (Grad)</span>
+                <span>CS 377: Database Systems</span>
+                <span>MATH 362: Mathematical Statistics II</span>
+                <span>MATH 498R: Directed Reading</span>
+                <span>MATH 351: Partial Differential Equations</span>
+                <span>CL 201: The Greeks</span>
+              </div>
+            </div>
+            <div class="tl-block upcoming-block">
+              <h4>Upcoming</h4>
+              <ul><li>Atmosphere Capital — Incoming Derivatives Analyst, New York, Summer 2026</li></ul>
+            </div>
+          </div>
+          <div class="tl-dot active-dot"></div>
+        </div>
+
+      </div><!-- end timeline -->
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Technical Projects</h2>
+      <p class="section-sub">Selected work across quantitative finance, machine learning, and systems</p>
+      <div class="projects-grid">
+
+        <div class="proj-card">
+          <div class="proj-head">
+            <h3>RAMPA</h3>
+            <a href="https://github.com/philipcardozo/RAMPA-Regime-Aware-Multi-Agent-Portfolio-Allocator" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="proj-sub">Regime-Aware Multi-Agent Portfolio Allocator</p>
+          <ul class="bullets">
+            <li>HMM regimes + LightGBM alpha across 3,500+ trading days with PPO agents in 5-phase ML pipeline</li>
+            <li>DNN calibrates rough Bergomi volatility from 42-point IV surfaces at ms latency without numerical iteration</li>
+            <li>Purged cross-validation with 5-day embargo; validated against MVO and equal-weight baselines</li>
+          </ul>
+          <div class="tech-row">
+            <span>PyTorch</span><span>SVM</span><span>Decision Trees</span><span>LightGBM</span><span>HMM</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-head">
+            <h3>NEXUS</h3>
+            <a href="https://github.com/philipcardozo/Network-Enhanced-Underwriting-eXposure-Intelligence-System-NEXUS-" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="proj-sub">FDIC &amp; ABS Intelligence System</p>
+          <ul class="bullets">
+            <li>Neo4j risk engine to visualize complex financial networks and uncover hidden debt patterns</li>
+            <li>Automated data ingestion with custom Python pipelines, streamlining disparate sources</li>
+            <li>Graph centrality algorithms score credit exposure, sharpening detection of high-risk network links</li>
+          </ul>
+          <div class="tech-row">
+            <span>Neo4j</span><span>Cypher</span><span>LeastSquares</span><span>Bayesian</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-head">
+            <h3>HFT Hawkes Process</h3>
+            <a href="https://github.com/FelipeCardozo0" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="proj-sub">High-Frequency Trading System</p>
+          <ul class="bullets">
+            <li>Executes futures and options in 9ms with 24/7 market data, 0–300% leverage via IBKR data</li>
+            <li>Pre-trade margin preview, VaR limits with auto kill-switches and persistent SQLite audit trails</li>
+            <li>Prometheus metrics + Dockerized Azure deployment with real-time PnL and latency dashboards</li>
+          </ul>
+          <div class="tech-row">
+            <span>C++</span><span>Shell</span><span>SQLite</span><span>Docker</span><span>Prometheus</span><span>Azure</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-head">
+            <h3>Fourier Option Pricing</h3>
+            <a href="https://github.com/FelipeCardozo0" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="proj-sub">Risk-Neutral Option Pricing Engine</p>
+          <ul class="bullets">
+            <li>6 stochastic models via Carr-Madan FFT — sub-$0.01 pricing error</li>
+            <li>Implied volatility surface calibration via differential evolution on Heston models; &lt;5 bps RMSE</li>
+            <li>VaR, CVaR, and Greeks via Fourier inversion — O(N<sup>−2</sup>) convergence vs. Monte Carlo's O(N<sup>−½</sup>)</li>
+          </ul>
+          <div class="tech-row">
+            <span>Python</span><span>NumPy</span><span>yfinance</span><span>SciPy</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-head">
+            <h3>MPT Portfolio Optimizer</h3>
+            <a href="https://github.com/FelipeCardozo0" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="proj-sub">Systematic Portfolio Optimization</p>
+          <ul class="bullets">
+            <li>4 strategies: Max Sharpe, Min Vol, Risk Parity, CVaR — achieving 1.34 Sharpe ratio</li>
+            <li>Black-Litterman returns + Ledoit-Wolf shrinkage covariance; 12.28% annualized returns on 10-asset universe</li>
+            <li>Walk-forward backtest with mark-to-market drift, turnover constraints, and transaction costs over 5 years</li>
+          </ul>
+          <div class="tech-row">
+            <span>NumPy</span><span>Pandas</span><span>SciPy</span><span>Matplotlib</span><span>yfinance</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-head">
+            <h3>World Cup Neural Predictor</h3>
+            <a href="https://github.com/FelipeCardozo0" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="proj-sub">2026 FIFA World Cup Match Outcome Prediction</p>
+          <ul class="bullets">
+            <li>100K Monte Carlo + ML simulations; &gt;65% match prediction accuracy</li>
+            <li>45+ models parameterized — &lt;0.8 log loss, &lt;0.15 Brier score across 153 probability indicators</li>
+            <li>Calibrated non-stationary models on 12 past tournaments using FIFA &amp; Elo data</li>
+          </ul>
+          <div class="tech-row">
+            <span>PyTorch</span><span>Scikit-learn</span><span>XGBoost</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-head">
+            <h3>Urban Air Quality Forecast</h3>
+            <a href="https://github.com/FelipeCardozo0" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="proj-sub">Deep Learning for PM2.5 Prediction</p>
+          <ul class="bullets">
+            <li>Logistic Regression, Gaussian Processes, and Neural Networks across 420K urban air quality records</li>
+            <li>74% empirical coverage for 95% prediction intervals; calibrated multi-horizon uncertainty via Bayes</li>
+            <li>50+ meteorological features, temporal validation, automated backtesting on Snowflake ML</li>
+          </ul>
+          <div class="tech-row">
+            <span>PyTorch</span><span>JAX</span><span>Flax</span><span>Snowflake</span><span>Optax</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-head">
+            <h3>Schwarz-Christoffel Maps</h3>
+            <a href="https://github.com/FelipeCardozo0" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="proj-sub">Deep Learning for Conformal Mapping &mdash; Research Paper</p>
+          <ul class="bullets">
+            <li>Neural networks compute Schwarz-Christoffel conformal maps, turning unit disks onto polygons</li>
+            <li>0.0038 MSE with ELU activation on fixed quadrilaterals; 0.0194 on variable-vertex fluid mechanics datasets</li>
+            <li>MLP ReLU with Xavier initialization; backpropagation for gradient flow and noise reduction</li>
+          </ul>
+          <div class="tech-row">
+            <span>PyTorch</span><span>NumPy</span><span>MATLAB</span><span>Scikit-learn</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-head">
+            <h3>Numerai Market Agent</h3>
+            <a href="https://github.com/FelipeCardozo0" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="proj-sub">Numerai Tournament Q3 2024 — 92nd Percentile</p>
+          <ul class="bullets">
+            <li>ML algorithm blending 6 LightGBM regressors on Numerai v5.2 targets with rank-gaussian normalization, 156-era folds</li>
+            <li>Feature neutralization at 0.5 proportion via pseudoinverse projection to maximize Meta Model Contribution</li>
+            <li>Expanding-window walk-forward CV with 8-era purge gap — ranked 843 / 10,000</li>
+          </ul>
+          <div class="tech-row">
+            <span>LightGBM</span><span>Pandas</span><span>NumPy</span><span>Walk-Forward CV</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-head">
+            <h3>Crypto Style Factors</h3>
+            <a href="https://github.com/FelipeCardozo0" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="proj-sub">Exploring Style Factors in Cryptocurrencies &mdash; Research Paper</p>
+          <ul class="bullets">
+            <li>Decomposed crypto risk returns into systematic factors with long-short Factor Ratio and Momentum portfolios</li>
+            <li>160.38% annualized returns, Sharpe ratio of 0.93</li>
+            <li>Proved liquidity and volatility are statistically significant return drivers</li>
+          </ul>
+          <div class="tech-row">
+            <span>Pandas</span><span>NumPy</span><span>Statsmodels</span><span>VBA</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional -->
+  <section id="additional">
+    <div class="container">
+      <div class="add-grid">
+
+        <div class="add-card">
+          <h3>Honors &amp; Awards</h3>
+          <ul>
+            <li><strong>NumerAI</strong> — 843 / 10,000</li>
+            <li><strong>HackATL 2025</strong> — 9th Place</li>
+            <li><strong>ETHDenver 2025</strong> — 6th Place</li>
+            <li><strong>Point72 Academy</strong> — Advanced to HQ Finals</li>
+            <li><strong>Akuna Capital HackerRank</strong> — 217 / 3,000</li>
+            <li><strong>Citadel APAC Datathon</strong> — Participant</li>
+          </ul>
+        </div>
+
+        <div class="add-card">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>Python · C/C++ · SQL · SQLite · VBA</li>
+            <li>PyTorch · JAX · LightGBM · Scikit-learn</li>
+            <li>TensorRT · NVIDIA Jetson · Edge AI</li>
+            <li>Docker · Azure · AWS · Prometheus</li>
+            <li>Neo4j (Cypher) · Snowflake · IBKR API</li>
+            <li>ML Algorithmic Trading · 115 WPM</li>
+          </ul>
+        </div>
+
+        <div class="add-card">
+          <h3>Leadership</h3>
+          <ul>
+            <li>Veratori.com — Co-founder &amp; CTO</li>
+            <li>Blockchain at Emory — CTO, Head of Mining</li>
+            <li>Algory Capital — Quantitative Analyst</li>
+            <li>Pocket Aces Trading — Member</li>
+            <li>Sigma Chi Fraternity — Member</li>
+            <li>Slow Food Emory — Produce Initiative</li>
+          </ul>
+        </div>
+
+        <div class="add-card">
+          <h3>Interests</h3>
+          <ul>
+            <li>Climb K2 &nbsp;·&nbsp; Scuba Diving</li>
+            <li>Surfing &amp; Sailing</li>
+            <li>European Soccer</li>
+            <li>Chess &amp; Poker</li>
+            <li>Classical Music</li>
+            <li>Portuguese · English · Spanish</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-name">Philip O. Cardozo</p>
+        <div class="footer-links">
+          <a href="mailto:focardo@emory.edu">focardo@emory.edu</a>
+          <a href="https://www.linkedin.com/in/felipecardozo-" target="_blank">LinkedIn</a>
+          <a href="https://github.com/FelipeCardozo0" target="_blank">GitHub</a>
+          <a href="Resume.pdf" target="_blank">Resume ↗</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 philipcardozo.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
