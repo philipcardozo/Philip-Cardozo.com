@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Philip O. Cardozo</title>
+  <meta name="description" content="Philip Cardozo's technical projects in quantitative finance, machine learning, systems engineering, and applied mathematics research.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">Philip O. Cardozo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#roadmap">Roadmap</a>
+        <a href="projects.html" style="color: var(--white);">Projects</a>
+        <a href="Resume.pdf" target="_blank" class="nav-resume">Resume ↗</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="proj-hero">
+    <div class="container">
+      <p class="hero-eyebrow">philipcardozo.com / projects</p>
+      <h1 class="proj-hero-title">Technical <em>Projects</em></h1>
+      <p class="proj-hero-sub">Quantitative finance, machine learning, and systems engineering — from co-authored research papers to production trading infrastructure.</p>
+      <div class="proj-hero-stats">
+        <div class="ph-stat">
+          <span class="ph-num">12</span>
+          <span class="ph-label">Projects</span>
+        </div>
+        <div class="ph-divider"></div>
+        <div class="ph-stat">
+          <span class="ph-num">8</span>
+          <span class="ph-label">GitHub Repos</span>
+        </div>
+        <div class="ph-divider"></div>
+        <div class="ph-stat">
+          <span class="ph-num">3</span>
+          <span class="ph-label">Research Papers</span>
+        </div>
+        <div class="ph-divider"></div>
+        <div class="ph-stat">
+          <span class="ph-num">1.38</span>
+          <span class="ph-label">Best Sharpe</span>
+        </div>
+        <div class="ph-divider"></div>
+        <div class="ph-stat">
+          <span class="ph-num">9ms</span>
+          <span class="ph-label">HFT Latency</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Bar -->
+  <div id="filter-bar">
+    <div class="container">
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All <span class="filter-count" id="count-all">12</span></button>
+        <button class="filter-btn" data-filter="quant">Quant Finance <span class="filter-count" id="count-quant"></span></button>
+        <button class="filter-btn" data-filter="ml">Machine Learning <span class="filter-count" id="count-ml"></span></button>
+        <button class="filter-btn" data-filter="research">Research <span class="filter-count" id="count-research"></span></button>
+        <button class="filter-btn" data-filter="systems">Systems <span class="filter-count" id="count-systems"></span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Projects -->
+  <section id="featured-projects">
+    <div class="container">
+      <p class="proj-section-label">Featured — Current &amp; Complex</p>
+
+      <!-- RAMPA -->
+      <article class="feat-card" data-category="quant ml">
+        <div class="feat-card-inner">
+          <div class="feat-left">
+            <div class="feat-header">
+              <div class="feat-badges">
+                <span class="proj-badge badge-current">Now</span>
+                <span class="proj-badge badge-quant">Quant Finance</span>
+                <span class="proj-badge badge-ml">ML</span>
+              </div>
+              <span class="feat-date">Jan 2026 – Present</span>
+            </div>
+            <h2 class="feat-title">RAMPA</h2>
+            <p class="feat-subtitle">Regime-Aware Multi-Agent Portfolio Allocator</p>
+            <p class="feat-desc">Five-phase ML pipeline combining HMM regime detection, LightGBM alpha generation, deep rough volatility calibration via neural networks, and PPO reinforcement learning for dynamic asset allocation. A DNN calibrates rough Bergomi volatility from 42-point IV surfaces at millisecond latency without numerical iteration — validated against MVO and equal-weight baselines across 3,500+ trading days.</p>
+            <div class="feat-metrics">
+              <div class="metric-item">
+                <span class="metric-val">3,500+</span>
+                <span class="metric-key">Trading Days</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">5</span>
+                <span class="metric-key">ML Phases</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">ms</span>
+                <span class="metric-key">Inference Latency</span>
+              </div>
+            </div>
+          </div>
+          <div class="feat-right">
+            <div class="feat-tech-block">
+              <p class="feat-tech-label">Tech Stack</p>
+              <div class="tech-row">
+                <span>PyTorch</span><span>LightGBM</span><span>HMM</span><span>PPO</span>
+                <span>Stable-Baselines3</span><span>Python</span><span>SVM</span>
+              </div>
+            </div>
+            <div class="feat-detail-list">
+              <div class="feat-detail-item">
+                <span class="fdi-label">Regime Detection</span>
+                <span class="fdi-val">Gaussian HMM across bull / bear / neutral market states</span>
+              </div>
+              <div class="feat-detail-item">
+                <span class="fdi-label">Alpha Engine</span>
+                <span class="fdi-val">LightGBM with purged walk-forward CV, 5-day embargo</span>
+              </div>
+              <div class="feat-detail-item">
+                <span class="fdi-label">Volatility Calibration</span>
+                <span class="fdi-val">DNN calibrates rough Bergomi from 42-point IV surfaces</span>
+              </div>
+              <div class="feat-detail-item">
+                <span class="fdi-label">Allocation</span>
+                <span class="fdi-val">PPO reinforcement learning agents, benchmarked against MVO</span>
+              </div>
+            </div>
+            <a href="https://github.com/philipcardozo/RAMPA-Regime-Aware-Multi-Agent-Portfolio-Allocator" target="_blank" class="feat-gh-link">View on GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Regime Volatility Arbitrage Engine -->
+      <article class="feat-card" data-category="quant research">
+        <div class="feat-card-inner">
+          <div class="feat-left">
+            <div class="feat-header">
+              <div class="feat-badges">
+                <span class="proj-badge badge-current">Now</span>
+                <span class="proj-badge badge-quant">Quant Finance</span>
+                <span class="proj-badge badge-research">Research Paper</span>
+              </div>
+              <span class="feat-date">Jan 2026 – Present</span>
+            </div>
+            <h2 class="feat-title">Regime Volatility Arbitrage Engine</h2>
+            <p class="feat-subtitle">Co-authored Academic Paper with Ph.D. Mitchell Scott — Emory University</p>
+            <p class="feat-desc">Automated volatility arbitrage engine exploiting mispricing in short-dated equity index straddles using rough fractional Volterra processes (H ≈ 0.07) with MCMC regime detection and self-exciting Hawkes jump-diffusion. The system trades only during identified calm-market regimes, integrates live with Interactive Brokers for both paper and live execution, and achieves comprehensive risk validation including pre-trade margin checks and drawdown controls.</p>
+            <div class="feat-metrics">
+              <div class="metric-item">
+                <span class="metric-val">1.38</span>
+                <span class="metric-key">Sharpe Ratio</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">0.57</span>
+                <span class="metric-key">Calmar Ratio</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">4,096</span>
+                <span class="metric-key">MC Paths</span>
+              </div>
+            </div>
+          </div>
+          <div class="feat-right">
+            <div class="feat-tech-block">
+              <p class="feat-tech-label">Tech Stack</p>
+              <div class="tech-row">
+                <span>Python</span><span>Monte Carlo</span><span>MCMC</span>
+                <span>Hawkes Process</span><span>GARCH</span><span>IBKR API</span>
+              </div>
+            </div>
+            <div class="feat-detail-list">
+              <div class="feat-detail-item">
+                <span class="fdi-label">Volatility Model</span>
+                <span class="fdi-val">Rough fractional Volterra processes, H ≈ 0.07</span>
+              </div>
+              <div class="feat-detail-item">
+                <span class="fdi-label">Regime Detection</span>
+                <span class="fdi-val">MCMC — trades only during calm-market regimes</span>
+              </div>
+              <div class="feat-detail-item">
+                <span class="fdi-label">Jump Component</span>
+                <span class="fdi-val">Self-exciting Hawkes jump-diffusion pricing</span>
+              </div>
+              <div class="feat-detail-item">
+                <span class="fdi-label">Convergence</span>
+                <span class="fdi-val">O(N⁻½); reached 0.87 naive volatility benchmark</span>
+              </div>
+            </div>
+            <a href="https://github.com/philipcardozo/Regime-Volatility-Arbitrage-Engine" target="_blank" class="feat-gh-link">View on GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- NEXUS -->
+      <article class="feat-card" data-category="ml systems">
+        <div class="feat-card-inner">
+          <div class="feat-left">
+            <div class="feat-header">
+              <div class="feat-badges">
+                <span class="proj-badge badge-ml">Machine Learning</span>
+                <span class="proj-badge badge-systems">Systems</span>
+              </div>
+              <span class="feat-date">H2 2025</span>
+            </div>
+            <h2 class="feat-title">NEXUS</h2>
+            <p class="feat-subtitle">Network-Enhanced Underwriting eXposure Intelligence System</p>
+            <p class="feat-desc">Institutional-grade, AI-powered credit underwriting platform for Brazilian FIDC and US Asset-Backed Securities markets. Integrates 40+ data sources into a Neo4j knowledge graph and ML pipeline — producing PD, LGD, and EAD estimates with full SHAP explainability, LLM-generated credit memoranda, and a 15-trigger real-time early warning surveillance system.</p>
+            <div class="feat-metrics">
+              <div class="metric-item">
+                <span class="metric-val">40+</span>
+                <span class="metric-key">Data Sources</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">15</span>
+                <span class="metric-key">Warning Triggers</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">3</span>
+                <span class="metric-key">Risk Metrics</span>
+              </div>
+            </div>
+          </div>
+          <div class="feat-right">
+            <div class="feat-tech-block">
+              <p class="feat-tech-label">Tech Stack</p>
+              <div class="tech-row">
+                <span>Neo4j</span><span>Cypher</span><span>Python</span>
+                <span>SHAP</span><span>LLM</span><span>Bayesian</span><span>Graph ML</span>
+              </div>
+            </div>
+            <div class="feat-detail-list">
+              <div class="feat-detail-item">
+                <span class="fdi-label">Graph Engine</span>
+                <span class="fdi-val">Neo4j knowledge graph with Cypher centrality-based credit scoring</span>
+              </div>
+              <div class="feat-detail-item">
+                <span class="fdi-label">Credit Risk</span>
+                <span class="fdi-val">PD, LGD, EAD estimates with SHAP explainability layer</span>
+              </div>
+              <div class="feat-detail-item">
+                <span class="fdi-label">Automation</span>
+                <span class="fdi-val">LLM-generated credit memoranda from structured data</span>
+              </div>
+              <div class="feat-detail-item">
+                <span class="fdi-label">Surveillance</span>
+                <span class="fdi-val">15-trigger real-time early warning detection system</span>
+              </div>
+            </div>
+            <a href="https://github.com/philipcardozo/Network-Enhanced-Underwriting-eXposure-Intelligence-System-NEXUS-" target="_blank" class="feat-gh-link">View on GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Azure HFT -->
+      <article class="feat-card" data-category="quant systems">
+        <div class="feat-card-inner">
+          <div class="feat-left">
+            <div class="feat-header">
+              <div class="feat-badges">
+                <span class="proj-badge badge-quant">Quant Finance</span>
+                <span class="proj-badge badge-systems">Systems</span>
+              </div>
+              <span class="feat-date">H2 2025</span>
+            </div>
+            <h2 class="feat-title">Azure-Deployed HFT</h2>
+            <p class="feat-subtitle">High-Frequency Trading Infrastructure on Azure AKS</p>
+            <p class="feat-desc">Full-stack, low-latency trading infrastructure built on Azure using the Interactive Brokers API. Executes futures and options in 9ms with 24/7 live market data feed, 0–300% dynamic leverage via Hawkes Process signal generation, VaR kill-switches, and persistent SQLite audit trails. Fully containerized with Kubernetes, Terraform, Prometheus monitoring, and TimescaleDB for time-series persistence.</p>
+            <div class="feat-metrics">
+              <div class="metric-item">
+                <span class="metric-val">9ms</span>
+                <span class="metric-key">Execution Latency</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">0–300%</span>
+                <span class="metric-key">Dynamic Leverage</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">24/7</span>
+                <span class="metric-key">Live Market Feed</span>
+              </div>
+            </div>
+          </div>
+          <div class="feat-right">
+            <div class="feat-tech-block">
+              <p class="feat-tech-label">Tech Stack</p>
+              <div class="tech-row">
+                <span>Python</span><span>C++</span><span>Azure AKS</span>
+                <span>Kubernetes</span><span>Terraform</span><span>Redis</span>
+                <span>Prometheus</span><span>Docker</span><span>TimescaleDB</span>
+              </div>
+            </div>
+            <div class="feat-detail-list">
+              <div class="feat-detail-item">
+                <span class="fdi-label">Signal Generation</span>
+                <span class="fdi-val">Hawkes Process — self-exciting point process order flow</span>
+              </div>
+              <div class="feat-detail-item">
+                <span class="fdi-label">Risk Controls</span>
+                <span class="fdi-val">Pre-trade margin preview, VaR limits, auto kill-switches</span>
+              </div>
+              <div class="feat-detail-item">
+                <span class="fdi-label">Infrastructure</span>
+                <span class="fdi-val">AKS + Terraform IaC, Azure Key Vault secrets management</span>
+              </div>
+              <div class="feat-detail-item">
+                <span class="fdi-label">Observability</span>
+                <span class="fdi-val">Prometheus metrics, real-time PnL &amp; latency dashboards</span>
+              </div>
+            </div>
+            <a href="https://github.com/philipcardozo/Azure-Deployed-Interactive-Brokers-HFT" target="_blank" class="feat-gh-link">View on GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- All Projects Grid -->
+  <section id="all-projects">
+    <div class="container">
+      <p class="proj-section-label">All Projects</p>
+      <div class="projects-full-grid">
+
+        <!-- Fourier Option Pricing -->
+        <article class="proj-full-card" data-category="quant research">
+          <div class="pfc-top">
+            <div class="pfc-badges">
+              <span class="proj-badge badge-quant">Quant Finance</span>
+              <span class="proj-badge badge-research">Research</span>
+            </div>
+            <span class="pfc-date">H1 2025</span>
+          </div>
+          <div class="pfc-header">
+            <h3>Fourier Option Pricing Engine</h3>
+            <a href="https://github.com/philipcardozo/Fourier-Based-Characteristic-Function-Methods-for-Risk-Neutral-Option-Pricing" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="pfc-sub">Risk-Neutral Pricing via Characteristic Functions &amp; FFT</p>
+          <p class="pfc-desc">High-performance Python engine implementing 6 stochastic models (Heston, CGMY, Variance Gamma, Kou, Merton, BSM) via Carr-Madan FFT and COS methods. Implied volatility surface calibration via differential evolution on Heston. VaR, CVaR, and Greeks via Fourier inversion — O(N⁻²) convergence vs. Monte Carlo's O(N⁻½).</p>
+          <div class="pfc-metrics-row">
+            <div class="pfc-metric"><span class="pm-val">&lt;$0.01</span><span class="pm-key">Pricing Error</span></div>
+            <div class="pfc-metric"><span class="pm-val">&lt;5 bps</span><span class="pm-key">RMSE Heston</span></div>
+            <div class="pfc-metric"><span class="pm-val">6</span><span class="pm-key">Stochastic Models</span></div>
+          </div>
+          <div class="tech-row">
+            <span>Python</span><span>NumPy</span><span>SciPy</span><span>FFT</span><span>yfinance</span>
+          </div>
+        </article>
+
+        <!-- Systematic Portfolio MPT -->
+        <article class="proj-full-card" data-category="quant">
+          <div class="pfc-top">
+            <div class="pfc-badges">
+              <span class="proj-badge badge-quant">Quant Finance</span>
+            </div>
+            <span class="pfc-date">H2 2024</span>
+          </div>
+          <div class="pfc-header">
+            <h3>Systematic Portfolio Optimizer</h3>
+            <a href="https://github.com/philipcardozo/Systematic-Portfolio-Optimization-MPT" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="pfc-sub">Modern Portfolio Theory — 4 Optimization Strategies</p>
+          <p class="pfc-desc">Python library for mean-variance portfolio construction using Black-Litterman returns and Ledoit-Wolf shrinkage covariance. Four strategies: Max Sharpe, Min Volatility, Risk Parity, and CVaR minimization. Walk-forward backtest with mark-to-market drift, turnover constraints, and transaction costs over 5 years.</p>
+          <div class="pfc-metrics-row">
+            <div class="pfc-metric"><span class="pm-val">1.34</span><span class="pm-key">Sharpe Ratio</span></div>
+            <div class="pfc-metric"><span class="pm-val">12.28%</span><span class="pm-key">Ann. Return</span></div>
+            <div class="pfc-metric"><span class="pm-val">4</span><span class="pm-key">Strategies</span></div>
+          </div>
+          <div class="tech-row">
+            <span>Python</span><span>NumPy</span><span>Pandas</span><span>SciPy</span><span>Matplotlib</span>
+          </div>
+        </article>
+
+        <!-- Numerai -->
+        <article class="proj-full-card" data-category="ml quant">
+          <div class="pfc-top">
+            <div class="pfc-badges">
+              <span class="proj-badge badge-ml">Machine Learning</span>
+              <span class="proj-badge badge-quant">Quant Finance</span>
+            </div>
+            <span class="pfc-date">H2 2024</span>
+          </div>
+          <div class="pfc-header">
+            <h3>Numerai Market Residuals Agent</h3>
+            <a href="https://github.com/philipcardozo/Numerai-Market-Residuals-Agent" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="pfc-sub">Numerai Tournament — 92nd Percentile (843 / 10,000)</p>
+          <p class="pfc-desc">Ensemble ML algorithm for the Numerai tournament blending 6 LightGBM regressors on v5.2 targets with rank-gaussian feature normalization. Feature neutralization at 0.5 proportion via pseudoinverse projection to maximize Meta Model Contribution. Expanding-window walk-forward CV with 8-era purge gap for temporal integrity.</p>
+          <div class="pfc-metrics-row">
+            <div class="pfc-metric"><span class="pm-val">843</span><span class="pm-key">/ 10K Rank</span></div>
+            <div class="pfc-metric"><span class="pm-val">6</span><span class="pm-key">LightGBM Models</span></div>
+            <div class="pfc-metric"><span class="pm-val">156</span><span class="pm-key">Era Folds</span></div>
+          </div>
+          <div class="tech-row">
+            <span>LightGBM</span><span>Pandas</span><span>NumPy</span><span>Walk-Forward CV</span>
+          </div>
+        </article>
+
+        <!-- World Cup Neural Predictor -->
+        <article class="proj-full-card" data-category="ml">
+          <div class="pfc-top">
+            <div class="pfc-badges">
+              <span class="proj-badge badge-ml">Machine Learning</span>
+            </div>
+            <span class="pfc-date">H2 2025</span>
+          </div>
+          <div class="pfc-header">
+            <h3>World Cup Neural Predictor</h3>
+            <a href="https://github.com/philipcardozo/SportsBetting_FifaClubWorldCup" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="pfc-sub">2026 FIFA World Cup Match Outcome Prediction</p>
+          <p class="pfc-desc">Neural predictor for 2026 FIFA World Cup built on 45+ calibrated models and 100K Monte Carlo simulations. Parameterized across 12 past tournaments using FIFA and Elo historical data, incorporating 153 probability indicators including injuries and form. Non-stationary calibration achieves &lt;0.8 log loss and &lt;0.15 Brier score.</p>
+          <div class="pfc-metrics-row">
+            <div class="pfc-metric"><span class="pm-val">&gt;65%</span><span class="pm-key">Match Accuracy</span></div>
+            <div class="pfc-metric"><span class="pm-val">100K</span><span class="pm-key">MC Simulations</span></div>
+            <div class="pfc-metric"><span class="pm-val">45+</span><span class="pm-key">ML Models</span></div>
+          </div>
+          <div class="tech-row">
+            <span>PyTorch</span><span>XGBoost</span><span>Scikit-learn</span><span>Monte Carlo</span>
+          </div>
+        </article>
+
+        <!-- Urban Air Quality -->
+        <article class="proj-full-card" data-category="ml research">
+          <div class="pfc-top">
+            <div class="pfc-badges">
+              <span class="proj-badge badge-ml">Machine Learning</span>
+              <span class="proj-badge badge-research">Research</span>
+            </div>
+            <span class="pfc-date">H2 2025</span>
+          </div>
+          <div class="pfc-header">
+            <h3>Urban Air Quality Forecast</h3>
+            <a href="https://github.com/FelipeCardozo0" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="pfc-sub">Deep Learning for PM2.5 Prediction — Snowflake ML</p>
+          <p class="pfc-desc">Deep learning system predicting urban PM2.5 air quality across 420K records using Logistic Regression, Gaussian Processes, and Neural Networks. Achieves 74% empirical coverage for 95% prediction intervals with calibrated multi-horizon uncertainty via Bayesian methods. 50+ meteorological features, automated backtesting on Snowflake ML.</p>
+          <div class="pfc-metrics-row">
+            <div class="pfc-metric"><span class="pm-val">74%</span><span class="pm-key">Empirical Coverage</span></div>
+            <div class="pfc-metric"><span class="pm-val">420K</span><span class="pm-key">Records</span></div>
+            <div class="pfc-metric"><span class="pm-val">50+</span><span class="pm-key">Features</span></div>
+          </div>
+          <div class="tech-row">
+            <span>PyTorch</span><span>JAX</span><span>Flax</span><span>Snowflake</span><span>Optax</span>
+          </div>
+        </article>
+
+        <!-- Crypto Style Factors -->
+        <article class="proj-full-card" data-category="quant research">
+          <div class="pfc-top">
+            <div class="pfc-badges">
+              <span class="proj-badge badge-quant">Quant Finance</span>
+              <span class="proj-badge badge-research">Research Paper</span>
+            </div>
+            <span class="pfc-date">H2 2025</span>
+          </div>
+          <div class="pfc-header">
+            <h3>Crypto Style Factors</h3>
+            <a href="https://github.com/FelipeCardozo0" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="pfc-sub">Exploring Style Factors in Cryptocurrencies</p>
+          <p class="pfc-desc">Research paper decomposing cryptocurrency risk-returns into systematic style factors using long-short Factor Ratio and Momentum portfolios. Empirically proves that liquidity and volatility are statistically significant return drivers in digital asset markets. Co-authored and submitted as academic work.</p>
+          <div class="pfc-metrics-row">
+            <div class="pfc-metric"><span class="pm-val">160.38%</span><span class="pm-key">Ann. Returns</span></div>
+            <div class="pfc-metric"><span class="pm-val">0.93</span><span class="pm-key">Sharpe Ratio</span></div>
+          </div>
+          <div class="tech-row">
+            <span>Pandas</span><span>NumPy</span><span>Statsmodels</span><span>VBA</span>
+          </div>
+        </article>
+
+        <!-- Schwarz-Christoffel -->
+        <article class="proj-full-card" data-category="research ml">
+          <div class="pfc-top">
+            <div class="pfc-badges">
+              <span class="proj-badge badge-research">Research Paper</span>
+              <span class="proj-badge badge-ml">Deep Learning</span>
+            </div>
+            <span class="pfc-date">Q1 2026</span>
+          </div>
+          <div class="pfc-header">
+            <h3>Schwarz-Christoffel Maps</h3>
+            <a href="https://github.com/FelipeCardozo0" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="pfc-sub">Deep Learning for Conformal Mapping — Research Paper</p>
+          <p class="pfc-desc">Neural networks computing Schwarz-Christoffel conformal maps from unit disks onto arbitrary polygons — eliminating numerical integration bottlenecks in fluid mechanics. MLP with ELU activation and Xavier initialization. Applied to both fixed and variable-vertex polygon datasets with backpropagation for gradient flow stability.</p>
+          <div class="pfc-metrics-row">
+            <div class="pfc-metric"><span class="pm-val">0.0038</span><span class="pm-key">MSE Fixed</span></div>
+            <div class="pfc-metric"><span class="pm-val">0.0194</span><span class="pm-key">MSE Variable</span></div>
+          </div>
+          <div class="tech-row">
+            <span>PyTorch</span><span>NumPy</span><span>MATLAB</span><span>Scikit-learn</span>
+          </div>
+        </article>
+
+        <!-- S&P 500 Analytics Dashboard -->
+        <article class="proj-full-card" data-category="quant ml">
+          <div class="pfc-top">
+            <div class="pfc-badges">
+              <span class="proj-badge badge-quant">Quant Finance</span>
+            </div>
+            <span class="pfc-date">H2 2024</span>
+          </div>
+          <div class="pfc-header">
+            <h3>S&amp;P 500 Analytics Dashboard</h3>
+            <a href="https://github.com/FelipeCardozo0" target="_blank" class="proj-arrow">↗</a>
+          </div>
+          <p class="pfc-sub">Real-Time Market Analytics Platform</p>
+          <p class="pfc-desc">Interactive analytics dashboard for S&P 500 market analysis — sector breakdowns, factor exposure, technical indicators, and portfolio monitoring. Built as a practical tool during Algory Capital quantitative analyst work for strategy analysis and reporting.</p>
+          <div class="pfc-metrics-row">
+            <div class="pfc-metric"><span class="pm-val">500+</span><span class="pm-key">Equities Tracked</span></div>
+            <div class="pfc-metric"><span class="pm-val">Live</span><span class="pm-key">Market Data</span></div>
+          </div>
+          <div class="tech-row">
+            <span>Python</span><span>Pandas</span><span>Plotly</span><span>yfinance</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Back -->
+  <section id="proj-cta">
+    <div class="container">
+      <div class="cta-inner">
+        <div>
+          <p class="cta-eyebrow">Want to collaborate?</p>
+          <h2 class="cta-title">Let's build something rigorous.</h2>
+        </div>
+        <div class="cta-links">
+          <a href="mailto:focardo@emory.edu" class="btn-primary">Get in Touch</a>
+          <a href="https://github.com/philipcardozo" target="_blank" class="btn-secondary">GitHub Profile ↗</a>
+          <a href="index.html" class="btn-secondary">← Back to Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-name">Philip O. Cardozo</p>
+        <div class="footer-links">
+          <a href="mailto:focardo@emory.edu">focardo@emory.edu</a>
+          <a href="https://www.linkedin.com/in/felipecardozo-" target="_blank">LinkedIn</a>
+          <a href="https://github.com/philipcardozo" target="_blank">GitHub</a>
+          <a href="Resume.pdf" target="_blank">Resume ↗</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 philipcardozo.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="projects.js"></script>
+</body>
+</html>
