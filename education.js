@@ -23,7 +23,8 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 const dmBars = document.querySelectorAll('.dm-bar');
 // Store target widths and reset to 0 initially
 dmBars.forEach(bar => {
-  const target = bar.style.width;
+  // Support data-w attribute (e.g. data-w="85%") as well as inline style.width
+  const target = bar.dataset.w || bar.style.width || '0%';
   bar.dataset.targetWidth = target;
   bar.style.width = '0%';
   bar.style.transition = 'none';
